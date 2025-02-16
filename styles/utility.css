@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 
-    font-family: "sans";
-    font-weight: 400;
+    font-family: "sans-light";
+    font-weight: 600;
+    font-style: normal;
     font-size: 62.5%;
+    /* border: 1px solid black; */
  }
 
 body {
@@ -14,17 +16,17 @@ body {
 }
 
 @font-face {
-    font-family: "poppins";
+    font-family: "roboto-bold";
     src: url(../Assets/fonts/Roboto/static/Roboto-Bold.ttf);
 }
 
 @font-face {
-    font-family: "poppins";
+    font-family: "sans-light";
     src: url(../Assets/fonts/Open_Sans/static/OpenSans-Light.ttf);
 }
 
 @font-face {
-    font-family: "poppins";
+    font-family: "sans-bold";
     src: url(../Assets/fonts/Open_Sans/static/OpenSans-Bold.ttf);
 }
 
@@ -32,12 +34,12 @@ body {
     font-family: "roboto-bold";
 }
 
-.sans-light {
+.sans-bold {
     font-family: "sans-bold";
 }
 
 .sans-light {
-    font-family: "sans-bold";
+    font-family: "sans-light";
 }
 
 
@@ -49,8 +51,13 @@ body {
   --bg-white: #ffffff;
   --bg-black: #000000;
   --bg-dark: #1f1e1e;
+  --bg-gray: #5a5a5a;
   --bg-dark-gray: #e6e6e6;
-  --bg-light-gray: #f2f2f2;
+  --bg-light-gray: #f6f6f6;
+}
+
+.bg-gray {
+  background-color: var(--bg-gray);
 }
 
 .bg-purple {
@@ -82,59 +89,48 @@ body {
 }
 /* bg-color-ended */
 
-
-/* color start*/
+/* color-started */
 :root {
 
-  --color-dark-gray: #7e7e7e;
-  --color-dark: #1f1f1f;
-  --color-light-dark: #424242;
-  --color-gray: #0000001a;
-  --color-black: #000000;
+  --color-purple: #701e7d;
+  --color-yellow: #ffd400;
   --color-white: #ffffff;
-  --color-blue: #0d6db7;
-  --color-green: #8dc63f;
-  --color-light-green: #f0fcda;
-  --color-none: none;
-}
-
-.color-dark-gray {
-  color: var(--color-dark-gray);
-}
-
-.color-light-dark {
-  color: var(--color-light-dark);
-}
-
-.color-dark {
-  color: var(--color-dark);
+  --color-black: #000000;
+  --color-dark: #1f1e1e;
+  --color-gray: #5a5a5a;
+  --color-dark-gray: #e6e6e6;
+  --color-light-gray: #f6f6f6;
 }
 
 .color-gray {
   color: var(--color-gray);
 }
 
-.color-green {
-  color: var(--color-green);
+.color-purple {
+  color: var(--color-purple);
 }
 
-.color-light-green {
-  color: var(--color-light-green);
+.color-yellow {
+  color: var(--color-yellow);
 }
 
-.color-none {
-  color: var(--color-none);
+.color-white {
+  color: var(--color-white);
 }
 
 .color-black {
   color: var(--color-black);
 }
 
-.color-blue {
-  color: var(--color-blue);
+.color-dark {
+  color: var(--color-dark);
 }
 
-.color-white {
-  color: var(--color-white);
+.color-dark-gray {
+  color: var(--color-dark-gray);
 }
-/* color end*/
+
+.color-light-gray {
+  color: var(--color-light-gray);
+}
+/* color-ended */
